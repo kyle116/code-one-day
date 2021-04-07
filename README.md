@@ -146,7 +146,7 @@ Lets break this down:
 <!DOCTYPE html>
 ```
 
-- The head tag contains the document title, scripts, styles, meta information, and other resources that help the HTML look and behave as expected
+- The head tag contains the document title, scripts, styles, meta information, and other resources that help the HTML look and behave as expected. The `title` tag will display on the website's tab description. More on [UTF-8](https://www.w3schools.com/tags/att_meta_charset.asp), [X-UA-Compatible](https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do), [viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
 ```html
 <head>
     <meta charset="UTF-8">
