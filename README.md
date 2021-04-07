@@ -123,6 +123,7 @@ There are many tags with the intention of organization and convention to display
 
 ### HTML File Layout
 ![](/images/html-structure.png)
+
 A typical HTML page will look something like this:
 ```html
 <!DOCTYPE html>
@@ -140,11 +141,12 @@ A typical HTML page will look something like this:
 ```
 
 Lets break this down:
+- This represents the version of HTML we are working with which is HTML5
 ```html
 <!DOCTYPE html>
 ```
-> This represents the version of HTML we are working with which is HTML5
 
+- The head tag contains the document title, scripts, styles, meta information, and other resources that help the HTML look and behave as expected
 ```html
 <head>
     <meta charset="UTF-8">
@@ -153,14 +155,13 @@ Lets break this down:
     <title>Document</title>
 </head>
 ```
-> The head tag contains the document title, scripts, styles, meta information, and other resources that help the HTML look and behave as expected
 
+- The body tag contains the content that shows up on the page (often will contain more but for this example is very minimal)
 ```html
 <body>
     <h1>Hello Friend</h1>
 </body>
 ```
-> The body tag contains the content that shows up on the page (often will contain more but for this example is very minimal)
 
 Also take note everything is wrapped inside a `<html></html>` tag of course.
 
