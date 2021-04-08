@@ -336,10 +336,12 @@ Classes are used to group elements together so a class can be applied multiple t
 
 Classes are easy to write, on your HTML file be sure to write an attribute called `class` with any name you would like for the class. On your CSS file, to target that element, the selector with start with a `.` and the name you gave your class.
 
+Multiple classes can also be set on an element separated by a space.
+
 HTML File:
 ```HTML
 <span class="heading">Hello Elliot</span>
-<p class="clothes">Black Sweater</p>
+<p class="clothes anotherClass">Black Sweater</p>
 
 <span class="heading">Hello Darlene</span>
 <p class="clothes">Sunglasses</p>
@@ -353,6 +355,9 @@ CSS File:
 }
 .clothes {
     font-style: italic;
+}
+.anotherClass {
+    font-weight: bold;
 }
 ```
 
@@ -376,6 +381,19 @@ CSS File:
 }
 ```
 
+### Other Ways to Target
+Here are other common ways to target elements in CSS. They will also provide more specific control on where you want to apply your styling
+| Selector | Example | Example description
+| --- | --- | --- |
+| .class1.class2 | `.name1.name2` | Selects all elements with both `name1` and `name2` set within its class attribute |
+| .class1 .class2 | `.name1 .name2` | Selects all elements with `name2` that is a descendant of an element with `name1` |
+| element,element | `div, p` | Selects all `<div>` elements and all `<p>` elements |
+| element element | `div p` | Selects all `<p>` elements inside `<div>` elements |
+| element>element | `div > p` | Selects all `<p>` elements where the parent is a `<div>` element |
+
+[More CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp) 
+
+
 #### Tips about HTML and CSS
 - Use descriptive classes/ids
 - Use camelCase or snake-case for classes/ids (names with spaces won't work)
@@ -394,6 +412,7 @@ Every element is by default considered a box with four parts:
 
 #### Margin and Padding
 Margin and padding can be used to position elements and create layout:
+
 ![](/images/margin.png)
 
 
@@ -427,6 +446,16 @@ Setting an element to `inline` would cause them to sit next to each other or hav
 Setting a block or inline element to `inline-block` causes the element to flow like an inline element, while being able to set a `width`, `height`, `padding`, and `margin`.
 
 ![](/images/display-inline-block.png)
+
+#### Position
+The `position` property specifies the type of positioning method used for an element. There are five different position values:
+
+- `static`: not positioned in any special way, positioned according to the normal flow of the page 
+- `relative`: is positioned relative to its normal position
+- `fixed`: is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled
+- `absolute`: is positioned relative to the nearest positioned ancestor (similar to fixed)
+- `sticky`: is positioned based on the user's scroll position (used less comonly)
+
 
 ## Deploying a Project (GitHub Pages)
 We will be using GitHub to deploy our project. This is not the only way to deploy a project but it is a free and very quick way to do so. Deploying just means assigning a URL/domain to your website and making it publicly accessible.
