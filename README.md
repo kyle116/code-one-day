@@ -323,9 +323,149 @@ a:hover {
 }
 ```
 
-## Classes and Ids
+### Classes and Ids
+**DRY** - Don't Repeat Yourself
+
+Why should we practice writing "DRY" code?
+- Performance: Having repeated code will lead to longer scripts. Longer scripts take up more memory and will take more time to load, which can make a website seem slow.
+
+- Maintainability: Imagine that we have the same line of code repeated 10 times in our program. If we ever want to change that functionality, we would have to search for all 10 places where that code is repeated and make 10 individual changes
+
+#### Classes
+Classes are used to group elements together so a class can be applied multiple times in one HTML document. Multiple classes can be applied to one element.
+
+Classes are easy to write, on your HTML file be sure to write an attribute called `class` with any name you would like for the class. On your CSS file, to target that element, the selector with start with a `.` and the name you gave your class.
+
+HTML File:
+```HTML
+<span class="heading">Hello Elliot</span>
+<p class="clothes">Black Sweater</p>
+
+<span class="heading">Hello Darlene</span>
+<p class="clothes">Sunglasses</p>
+```
+
+CSS File:
+```css
+.heading {
+    font-size: 20px;
+    font-weight: 3px;
+}
+.clothes {
+    font-style: italic;
+}
+```
+
+#### Ids
+Ids are used to target one specific element, so each element can only have one id, and each id can only be used once in an HTML document. 
+
+Writing ids are very similar to classes. The attribute on the HTML side will be `id` and the CSS selector will start with a `#` instead.
+
+HTML File:
+```HTML
+<span class="heading">Hello Elliot</span>
+<p class="clothes">Black Sweater</p>
+<p id="pet">QWERTY</p>
+
+```
+
+CSS File:
+```css
+#pet {
+    color: blue;
+}
+```
+
+#### Tips about HTML and CSS
+- Use descriptive classes/ids
+- Use camelCase or snake-case for classes/ids (names with spaces won't work)
+- Be consistent in formatting and naming
+- Don't repeat yourself (DRY)
+
+### Box Model & Layouts
+#### Block Elements
+![](/images/box-model.png)
+Every element is by default considered a box with four parts:
+- Content: The content of the box where text and images appear
+- Padding: Area between content and border
+- Border: A border that goes around the padding
+- Margin: Area between border and neighboring elements
 
 
+#### Margin and Padding
+Margin and padding can be used to position elements and create layout:
+![](/images/margin.png)
 
 
+Margin and padding can be added to all four sides at once:
 
+![](/images/all-sides.png)
+
+
+#### Display
+The display property is used to change whether an element displays as `none`,`inline`, `inline-block`, or `block`
+Example:
+```css
+li {
+    display: inline-block;
+}
+```
+**Block**
+
+The `block` value can be applied to inline elments so that they stack and acquire properties like `width`, `height`, `padding`, and `margin`.
+
+Elements displayed with `block` extend the length of the element to the end of the page.
+![](/images/display-block.png)
+
+**Inline**
+
+Setting an element to `inline` would cause them to sit next to each other or have them on the same line. They would in turn lose properties such as `width`, `height`, `padding`, and `margin`.
+![](/images/display-inline.png)
+
+**Inline-Block**
+
+Setting a block or inline element to `inline-block` causes the element to flow like an inline element, while being able to set a `width`, `height`, `padding`, and `margin`.
+
+![](/images/display-inline-block.png)
+
+## Deploying a Project (GitHub Pages)
+We will be using GitHub to deploy our project. This is not the only way to deploy a project but it is a free and very quick way to do so. Deploying just means assigning a URL/domain to your website and making it publicly accessible.
+
+You could use sites like https://domains.google/ or https://www.godaddy.com/ to purchase your domain. You can even set up the purchased url to be hosted for free on GitHub pages.
+
+### What is GitHub?
+An online version control service for code. It uses a technology called git. Think of how Google Docs keeps track of everyone who’s made changes to a document, with the ability to go back to a previous version. GitHub is Google Docs for code.
+
+GitHub is also like a social media for engineers, to share their projects with the world.
+
+It also offers its users a free hosting service for static sites. It can host sites that are front-end only (no backend data). If all you need is HTML, CSS, JavaScript, we can use it!
+
+### GitHub Deployment
+1. Go to github.com and signup for an account
+2. In the upper-righthand corner, there is a plus (+) symbol. Click on it and then click on New Repository from the dropdown.
+3. In the field under Repository Name enter username.github.io. For example, if your GitHub username is janesmith, you’ll enter janesmith.github.io of the Repository name field. (You can find your username in the dropdown under Owner to the left of the Repository Name field).
+4. Go ahead and check Initialize this repository with a README. This isn’t necessary, but it gives you a file that you can use to describe your project if you’d like.
+5. Click Create Repository
+6. Find the Upload Files button and click it.
+7. Drag your website folder into the appropriate area. Make sure it contains all of your files (.html, .css, etc)
+8. Once everything is uploaded, click Commit Changes
+9. Open up a new browser and navigate to the website username.github.io
+
+## Reference Pages
+Mozilla Developer Network
+W3Schools
+CSS-Tricks
+
+## Which Developer Role Is Right for Me?
+![](/images/developers.png)
+
+## Keep Learning!
+[GA Dash](https://dash.generalassemb.ly/)
+[codecademy](https://www.codecademy.com/learn)
+[freecodecamp](https://www.freecodecamp.org/)
+
+## Q&A
+NEVER BE AFRAID TO ASK QUESTIONS
+
+## My Contact Info
+kyle116@yahoo.com
