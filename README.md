@@ -191,7 +191,7 @@ In this example, the `<a>` tag has allowed us to create a link and access Google
 #### Images
 The image tag as it is named, is used to display an image. Note that due to no content going within the tags, the image tag is self closing.
 ```html
-<img src="https://www.sample.com/image.jpg" alt="family">
+<img src="https://i.kym-cdn.com/entries/icons/facebook/000/021/807/ig9OoyenpxqdCQyABmOQBZDI0duHk2QZZmWg2Hxd4ro.jpg" alt="hackerman">
 ```
 Again speaking about attributes, we have 2 attributes, `src` and `alt`
 - `src` is used to tell your image tag where the image is located, so a file path or website link would work
@@ -236,11 +236,94 @@ Couple things to note:
 - File must end with .css extension
 - If separated out from HTML, must be linked to the HTML file with a `<link>` tag
 
+### Breaking Down CSS
+![](/images/css-syntax.png)
+
+Which is the same as writing it like this:
+```css
+h1 {
+    color: yellow;
+    font-size: 11px;
+}
+```
+Keep in mind that you need semicolons after each property/value
 
 ### Writing CSS
-
-
 Lets try the 3 different methods out. Experiment and see if you can get some different styles to apply with any of the 3 methods
+
+#### Colors
+You are able to write colors in the following was in CSS:
+- Color Names (ex. yellow, green, blue)
+- [HTML5 Color Names](https://www.w3schools.com/colors/colors_names.asp) (ex. coral, aqua)
+- [Hexadecimal](https://www.w3schools.com/colors/colors_picker.asp) (ex. #F0F8FF)
+- [RGB](https://www.w3schools.com/colors/colors_picker.asp) (ex. `rgb(0, 0, 255)`)
+
+Examples:
+```css
+h1 {
+    background-color: coral;
+    color: rgb(0, 0, 255);
+}
+h2 {
+    background-color: #F0F8FF;
+}
+```
+
+#### Fonts
+To change your font, you want to use the property `font-family`. You can list different fonts to ensure maximum compatibility browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma. More about [font-family](https://www.w3schools.com/css/css_font.asp) and [web safe fonts](https://www.w3schools.com/css/css_font_websafe.asp)
+
+Example:
+```css
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+```
+**Google Fonts**
+
+Google fonts is a great resource to find different fonts you would like to use. They also provide the necessary `link` and even an example of how to write in CSS
+![](/images/google-font.png)
+HTML File:
+```html
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+</head>
+```
+CSS File:
+```css
+h1 {
+    font-family: 'Train One', cursive;
+}
+```
+
+**Font Related Styling**
+| Property | Values | Example |
+| --- | --- | --- |
+| text-align | left, center, right, justify | `text-align: center;` |
+| text-transform | uppercase, lowercase, capitalize | `text-transform: uppercase;` |
+| text-decoration | none, underline | `text-decoration: underline;` |
+| letter-spacing | px, em, rem | `letter-spacing: 1px;` |
+| font-weight | normal, bold | `font-weight: bold;` |
+| font-style | regular, italic | `font-style: italic;` |
+| font-size | px, em, rem | `font-size: 1em;` |
+
+
+#### Pseudo Classes
+Pseudo-classes are ways to target not just an element, but a specific state of an element
+
+| Pseudo Class | State | Example |
+| --- | --- | --- |
+| `:hover` | When the mouse hovers an element | a:hover |
+| `:focus` | When the mouse clicks inside an input field | input:focus |
+| `:visited` | After a link has been previously visited | a:visited |
+Example:
+```css
+a:hover {
+    background-color: gray;
+}
+```
+
+## Classes and Ids
 
 
 
