@@ -456,6 +456,11 @@ The `position` property specifies the type of positioning method used for an ele
 - `absolute`: is positioned relative to the nearest positioned ancestor (similar to fixed)
 - `sticky`: is positioned based on the user's scroll position (used less comonly)
 
+## Lets Create Our Own Personal Website
+Create a new folder or work in the existing one. We will need a HTML and CSS file. Lets start by writing in the necessary HTML to get started. 
+
+If you ever need, you will be able to see the finished code [here](./class)
+
 
 ## Deploying a Project (GitHub Pages)
 We will be using GitHub to deploy our project. This is not the only way to deploy a project but it is a free and very quick way to do so. Deploying just means assigning a URL/domain to your website and making it publicly accessible.
