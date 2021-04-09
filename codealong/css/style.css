@@ -1,0 +1,102 @@
+h1 {
+    font-family: 'Train One', cursive;
+    text-align: center;
+}
+/* pseudo class */
+a:hover {
+    background-color: gray;
+}
+/* classes */
+.greeting {
+    font-size: 20px;
+    font-weight: 3px;
+}
+.clothes {
+    font-style: italic;
+}
+.anotherClass {
+    font-weight: bold;
+}
+
+.clothes.anotherClass {
+    color: red;
+}
+
+/* id */
+#pet {
+    color: blue;
+}
+
+/* Margin Display Position */
+.container{
+	width:80%;
+	margin:auto;
+}
+
+.box {
+	background-color:#333;
+	color:#fff;
+
+	border-right:5px red solid;
+	border-left:5px red solid;
+	border-top:5px red solid;
+	border-bottom:5px red solid;
+	border-width:3px;
+	border-bottom-width:10px;
+	border-top-style:dotted;
+
+	border: 5px red solid;
+
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-right:20px;
+	padding-left:20px;
+
+	/* Same as above */
+	padding:20px;
+
+	margin-top:20px;
+	margin:20px 0;
+}
+
+.box h1{
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing:  0.2em;
+	word-spacing:  1em;
+}
+
+.position {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	margin-top: 30px;
+	position: relative;
+}
+
+.position h1{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+
+.position h2{
+	position: absolute;
+	bottom: 40px;
+	right: 100px;
+}
+
+.fixed {
+	position:fixed;
+	top:400px;
+}
+
+.button {
+	background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+	border:none;
+}
