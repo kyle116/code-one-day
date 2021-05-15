@@ -441,7 +441,7 @@ CSS File:
 ```css
 .greeting {
     font-size: 20px;
-    font-weight: 3px;
+    letter-spacing: 5px;
 }
 .clothes {
     font-style: italic;
