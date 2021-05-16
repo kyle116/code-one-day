@@ -341,7 +341,7 @@ Keep in mind that you need semicolons after each property/value
 Lets try the 3 different methods out. Experiment and see if you can get some different styles to apply with any of the 3 methods
 
 ### Colors
-You are able to write colors in the following was in CSS:
+You are able to write colors in the following ways in CSS:
 - Color Names (ex. yellow, green, blue)
 - [HTML5 Color Names](https://www.w3schools.com/colors/colors_names.asp) (ex. coral, aqua)
 - [Hexadecimal](https://www.w3schools.com/colors/colors_picker.asp) (ex. #F0F8FF)
@@ -424,7 +424,7 @@ Why should we practice writing "DRY" code?
 ### Classes
 Classes are used to group elements together so a class can be applied multiple times in one HTML document. Multiple classes can be applied to one element.
 
-Classes are easy to write, on your HTML file be sure to write an attribute called `class` with any name you would like for the class. On your CSS file, to target that element, the selector with start with a `.` and the name you gave your class.
+Classes are easy to write, on your HTML file be sure to write an attribute called `class` with any name you would like for the class. On your CSS file, to target that element, the selector will start with a `.` and the name you gave your class.
 
 Multiple classes can also be set on an element separated by a space.
 
@@ -568,13 +568,16 @@ It also offers its users a free hosting service for static sites. It can host si
 ## GitHub Deployment
 1. Go to github.com and signup for an account
 2. In the upper-righthand corner, there is a plus (+) symbol. Click on it and then click on New Repository from the dropdown.
-3. In the field under Repository Name enter username.github.io. For example, if your GitHub username is janesmith, you’ll enter janesmith.github.io of the Repository name field. (You can find your username in the dropdown under Owner to the left of the Repository Name field).
+3. In the field under Repository Name enter any name you would like
 4. Go ahead and check Initialize this repository with a README. This isn’t necessary, but it gives you a file that you can use to describe your project if you’d like.
 5. Click Create Repository
 6. Find the Upload Files button and click it.
-7. Drag your website folder into the appropriate area. Make sure it contains all of your files (.html, .css, etc)
+7. Drag your website files into the appropriate area. Make sure it contains all of your files (.html, .css, etc)
 8. Once everything is uploaded, click Commit Changes
-9. Open up a new browser and navigate to the website username.github.io
+9. Go to the Settings tab in your repository
+10. Click on the Pages tab on the left hand side
+11. Click the Source dropdown to "main" and click save
+12. Once the generated link turns green, you will be able to access your website
 
 # Closing
 ## Reference Pages
