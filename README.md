@@ -550,7 +550,7 @@ The `position` property specifies the type of positioning method used for an ele
 # Lets Create Our Own Personal Website
 Create a new folder or work in the existing one. We will need a HTML and CSS file. Lets start by writing in the necessary HTML to get started. 
 
-If you ever need, you will be able to see the finished code [here](./class)
+If you ever need, you will be able to see the finished code [here](/personal-site)
 
 
 # Deploying a Project (GitHub Pages)
